@@ -63,11 +63,12 @@ public class Main {
 
         //Задача 9
 
+        double rate = 1.01;
+
         totalSavings = 0;
         System.out.println("Задача 9");
         for (int i = 1; i <= 12; i++) {
-            totalSavings = totalSavings + savingsPerMonth;
-            totalSavings = totalSavings + totalSavings/100;
+            totalSavings = (int) ((totalSavings + savingsPerMonth) * rate);
             System.out.println("Месяц " + i + ", сумма накоплений равна " + totalSavings + " рублей");
         }
 
